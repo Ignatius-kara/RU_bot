@@ -1,0 +1,74 @@
+# Custom CSS for retro styling
+def load_css():
+    st.markdown("""
+    <style>
+    .main {
+        background: linear-gradient(135deg, #FFF8E7 0%, #F5F5DC 100%);
+    }
+    
+    .stApp > header {
+        background-color: transparent;
+    }
+    
+    .chat-container {
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 20px;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        border: 3px solid #FF6B35;
+    }
+    
+    .user-message {
+        background: linear-gradient(135deg, #4ECDC4 0%, #95E1D3 100%);
+        color: white;
+        padding: 12px 18px;
+        border-radius: 20px 20px 5px 20px;
+        margin: 10px 0;
+        margin-left: 20%;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .bot-message {
+        background: linear-gradient(135deg, #FF6B35 0%, #FFA500 100%);
+        color: white;
+        padding: 12px 18px;
+        border-radius: 20px 20px 20px 5px;
+        margin: 10px 0;
+        margin-right: 20%;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .title {
+        font-family: 'Comic Sans MS', cursive;
+        color: #2C3E50;
+        text-align: center;
+        font-size: 3em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+    
+    .subtitle {
+        font-family: 'Arial', sans-serif;
+        color: #FF6B35;
+        text-align: center;
+        font-size: 1.2em;
+        margin-bottom: 30px;
+    }
+    
+    div.stButton > button {
+        background: linear-gradient(135deg, #FF6B35 0%, #FFA500 100%);
+        color: white;
+        border: none;
+        border-radius: 25px;
+        padding: 12px 24px;
+        font-weight: bold;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+    }
+    
+    div.stButton > button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    </style>
+    """, unsafe_allow_html=True)
